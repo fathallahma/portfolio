@@ -21,8 +21,7 @@ const Portfolio = () => {
           </div>
           <h3>To-Do List</h3>
           <div className="portfolio__item-cta">
-            <a href="https://github.com" className='btn'>Github</a>
-            <a href="https://fathallah.web.app/" className='btn btn-primary' target='_blank'>Link to project</a>
+            <a href="https://github.com/fathallahma/react-app" className='btn'>Github</a>
           </div>
           
         </article>
@@ -32,8 +31,7 @@ const Portfolio = () => {
           </div>
           <h3>StarShip game project</h3>
           <div className="portfolio__item-cta">
-            <a href="https://github.com" className='btn'>Github</a>
-            <a href="https://fathallah.web.app/" className='btn btn-primary' target='_blank'>Link to project</a>
+            <a href="https://github.com/fathallahma/Starship" className='btn'>Github</a>
           </div>
           
         </article>
@@ -43,8 +41,7 @@ const Portfolio = () => {
           </div>
           <h3>Movies website project</h3>
           <div className="portfolio__item-cta">
-            <a href="https://github.com" className='btn'>Github</a>
-            <a href="https://fathallah.web.app/" className='btn btn-primary' target='_blank'>Link to project</a>
+            <a href="https://github.com/fathallahma/website-filmes" className='btn'>Github</a>
           </div>
           
         </article>
@@ -54,7 +51,7 @@ const Portfolio = () => {
           </div>
           <h3>Sportif competition java project</h3>
           <div className="portfolio__item-cta">
-            <a href="https://github.com" className='btn'>Github</a>
+            <a href="https://github.com/fathallahma/Competition-Sportif" className='btn'>Github</a>
           </div>
           
         </article>
@@ -64,7 +61,7 @@ const Portfolio = () => {
           </div>
           <h3>Clash Royale game java project</h3>
           <div className="portfolio__item-cta">
-            <a href="https://github.com" className='btn'>Github</a>
+            <a href="https://github.com/fathallahma/Clash-Royale-Java" className='btn'>Github</a>
           </div>
           
         </article>
@@ -74,14 +71,13 @@ const Portfolio = () => {
           </div>
           <h3>n-trees prgramming in python</h3>
           <div className="portfolio__item-cta">
-            <a href="https://github.com" className='btn'>Github</a>
+            <a href="https://github.com/fathallahma/N-Trees-Python" className='btn'>Github</a>
           </div>
           
         </article>
 
       </div> 
 
-      <h2>...</h2>
     </section>
   )
 }

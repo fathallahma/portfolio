@@ -1,0 +1,32 @@
+footer {
+    background: var(--color-primary);
+    padding: 3rem 0;
+    text-align: center;
+    font-size: 0.9;  
+    margin-top: 7rem;
+}
+
+footer a {
+    color: var(--color-bg);
+}
+
+.permaliks {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 2rem;
+    margin: 0 auto 3rem;
+}
+
+/*for tablet*/
+@media screen and (max-width: 1024px){
+    
+}
+
+/*for phone*/
+@media screen and (max-width: 600px){
+    .permaliks {
+        flex-direction: column;
+        gap: 1.5rem;
+    }
+}

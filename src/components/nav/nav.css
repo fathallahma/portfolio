@@ -1,26 +1,26 @@
 nav {
     background: rgba(0,0,0,0.3);
     width: max-content;
-    display: block;
-    padding: 0.7rem 1.7rem;
+    display: flex;
+    padding: 1rem 2.5rem; /* 👈 agrandi ici */
     z-index: 2;
     position: fixed;
     left: 50%;
     transform: translateX(-50%);
     bottom: 2rem;
-    display: flex;
-    gap: 0.8rem;
+    gap: 1rem; /* 👈 plus d’espace entre les icônes */
     border-radius: 3rem;
     backdrop-filter: blur(15px);
 }
 
 nav a {
     background: transparent;
-    padding: 0..9rem;
+    padding: 1rem; /* 👈 agrandi les boutons */
     border-radius: 50%;
     display: flex;
     color: var(--color-light);
-    font-size: 1.1rem;   
+    font-size: 1.3rem;   /* 👈 un peu plus grand */
+    transition: background 0.3s ease;
 }
 
 nav a:hover {
@@ -28,6 +28,6 @@ nav a:hover {
 }
 
 nav a.active {
-    background: var(--color-bg);
-    color: var(--color-white);
+    background: var(--color-primary);
+    color: var(--color-bg);
 }

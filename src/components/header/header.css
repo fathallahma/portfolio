@@ -1,50 +1,62 @@
 header {
-    height: 135vh;
-    padding-top: 7rem;
-    overflow: hidden; 
+    height: 85vh; /* Avant : 100vh */
+    padding-top: 5rem; /* Avant : 7rem */
+    overflow: hidden;
 }
 
+
 .header__container {
-    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
     height: 100%;
-    position: relative;
+    gap: 2rem;
+    padding: 0 2rem;
+}
+
+.header__left {
+    flex: 1;
+}
+
+.header__left h5,
+.header__left h2 {
+    margin: 0.5rem 0;
 }
 
 .cta {
     margin-top: 2.5rem;
     display: flex;
     gap: 1.2rem;
-    justify-content: center;
+    flex-wrap: wrap;
 }
 
 .header__socials {
     display: flex;
-    flex-direction: column;
-    align-items:center;
-    gap: 0.8rem;
-    position: absolute;
-    left: 0;
-    bottom: 3rem;
+    gap: 1rem;
+    margin-top: 2rem;
+    font-size: 1.5rem;
 }
 
-.header__socials::after {
-    content: "";
-    width: 1px;
-    height: 2rem;
-    background: var(--color-primary);
+.header__right {
+    flex-shrink: 0;
 }
 
 .me {
-    background: linear-gradient(var(--color-primary), transparent);
-    width: 22rem;
-    height: 30rem;
-    position: absolute;
-    left: calc(50% - 11rem);
-    margin-top: 4rem;
-    border-radius: 12rem 12rem 0 0;
+    width: 500px;
+    height: 500px;
+    border-radius: 50%;
     overflow: hidden;
-    padding: 5rem 1.5rem 1.5rem 1.5rem;
+    background: linear-gradient(var(--color-primary), transparent);
 }
+
+.me img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center top; /* 👈 ajuste ici */
+    transform: translateY(20px); /* 👈 descend l’image un peu */
+}
+
 
 .scroll__down {
     position: absolute;
@@ -53,21 +65,38 @@ header {
     transform: rotate(90deg);
     font-weight: 300;
     font-size: 0.9rem;
-} 
+}
 
-/*for tablet*/
-@media screen and (max-width: 1024px){
-    header {
-        height: 68vh;
+/* Tablet */
+@media screen and (max-width: 1024px) {
+    .header__container {
+        flex-direction: column;
+        text-align: center;
+        justify-content: center;
+        padding-top: 3rem;
+    }
+
+    .cta {
+        justify-content: center;
+    }
+
+    .header__socials {
+        justify-content: center;
+    }
+
+    .scroll__down {
+        display: none;
     }
 }
 
-/*for phone*/
-@media screen and (max-width: 600px){
+/* Phone */
+@media screen and (max-width: 600px) {
     header {
-        height: 100vh;
+        padding-top: 4rem;
     }
-    .header__socials, .scroll__down{
-        display: none;
+
+    .me {
+        width: 200px;
+        height: 200px;
     }
-}   
+}

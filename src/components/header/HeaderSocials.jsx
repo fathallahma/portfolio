@@ -6,9 +6,9 @@ import {FaGitlab} from 'react-icons/fa'
 const HeaderSocials = () => {
   return (
     <div className='header__socials'>
-       <a href='https://www.linkedin.com/in/mohamed-amine-fathallah-b18a40220/' target="_blank"><BsLinkedin/></a>
-       <a href='https://github.com' target="_blank"><FaGithub/></a>
-       <a href='https://gitlab.com' target="_blank"><FaGitlab/></a>
+       <a href='https://www.linkedin.com/in/med-amine-fathallah-b18a40220/' target="_blank"><BsLinkedin/></a>
+       <a href='https://github.com/fathallahma' target="_blank"><FaGithub/></a>
+       
     </div>
   )
 }

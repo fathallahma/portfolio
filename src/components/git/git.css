@@ -1,0 +1,39 @@
+/* git.css */
+
+.git__container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem;
+    background: rgba(255, 255, 255, 0.02);
+    border-radius: 1rem;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.05);
+    margin-top: 2rem;
+  }
+  
+  .git__calendar {
+    width: 100%;
+    max-width: 100%;
+    text-align: center;
+    padding: 2rem;
+    border: 1px solid var(--color-primary-variant);
+    border-radius: 1rem;
+    background-color: rgba(255, 255, 255, 0.03);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .git__calendar:hover {
+    transform: scale(1.01);
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.2);
+  }
+  
+  @media screen and (max-width: 600px) {
+    .git__calendar {
+      padding: 1rem;
+    }
+  
+    .git__container {
+      padding: 1rem;
+    }
+  }
+  
